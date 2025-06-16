@@ -117,28 +117,28 @@ frappe.ui.AppsSwitcher = class AppsSwitcher {
 		});
 	}
 	// refactor them into one single function
-	add_website_select() {
-		$(`<div class="divider"></div>`).appendTo(this.app_switcher_menu);
-		this.add_app_item(
-			{
-				app_name: "website",
-				app_title: __("Website"),
-				app_route: "/",
-				app_logo_url: "/assets/frappe/images/web.svg",
-			},
-			this.app_switcher_menu
-		);
-	}
+	// add_website_select() {
+	// 	$(`<div class="divider"></div>`).appendTo(this.app_switcher_menu);
+	// 	this.add_app_item(
+	// 		{
+	// 			app_name: "website",
+	// 			app_title: __("Website"),
+	// 			app_route: "/",
+	// 			app_logo_url: "/assets/frappe/images/web.svg",
+	// 		},
+	// 		this.app_switcher_menu
+	// 	);
+	// }
 
-	add_settings_select() {
-		$(`<div class="divider"></div>`).appendTo(this.app_switcher_menu);
-		this.add_app_item({
-			app_name: "settings",
-			app_title: __("Settings"),
-			app_logo_url: "/assets/frappe/images/settings-gear.svg",
-		});
-		let settings_item = this.app_switcher_menu.children().last();
-	}
+	// add_settings_select() {
+	// 	$(`<div class="divider"></div>`).appendTo(this.app_switcher_menu);
+	// 	this.add_app_item({
+	// 		app_name: "settings",
+	// 		app_title: __("Settings"),
+	// 		app_logo_url: "/assets/frappe/images/settings-gear.svg",
+	// 	});
+	// 	let settings_item = this.app_switcher_menu.children().last();
+	// }
 
 	set_current_app(app) {
 		if (!app) {
